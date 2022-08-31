@@ -26,17 +26,20 @@
 </style>
 
 <body>
-    <h1>Welcome to gitPub! Check out our drink meanu!</h1>
-
+    <h1>Welcome to gitPub. Ready for some food?</h1>
     <ul>
-        <% for(let i = 0; i < allDrinks.length; i++) { %>
+        <% for(let i = 0; i < allFood.length; i++) { %>
         <li>
-          <a href="/drinks/<%=i%>"><%=allDrinks[i].name %></a>
+          <a href="/food/<%=i%>"><%=allFood[i].name %></a>
         </li>
         <% } %>
+
       </ul>
       <br>
-      <a href="/food/">Hungry? Check out the food menu</a> 
+      <a href="/drinks/">Thristy? Check out the drink menu</a> 
+
+
+
       
 </body>
 
