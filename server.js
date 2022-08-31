@@ -12,24 +12,28 @@ const port = 3000;
 // DEFINE OUR ROUTES
 app.get("/drinks/", (req, res) => {
     res.render("drinks_index.ejs", {
-        allDrinks: drinks, })
+        allDrinks: drinks
+    })
 });
 
 
 app.get("/drinks/:index", (req, res) => {
     res.render("drinks_show.ejs", {
-        drink: drinks[req.params.id]})
+        drink: drinks[req.params.index]
+    })
 });
 
 
 app.get("/food/", (req, res) => {
     res.render("food_index.ejs",  {
-        allFood: food, })
+        allFoods: food
+    })
 });
 
 app.get("/food/:index", (req, res) => {
     res.render("food_show.ejs", {
-    foods: food[req.params.id]})
+    food: food[req.params.index]
+    })
 });
     
 app.listen(port, () => {

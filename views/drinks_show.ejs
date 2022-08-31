@@ -10,7 +10,8 @@
 <style type="text/css">
     body {
         color: #fff;
-        background-color: #0e273c; 
+        background-color: #0e273c;
+        text-transform: uppercase; 
     }
 
     h1 {
@@ -28,8 +29,12 @@
 <body>
     <h1>At foo bar</h1>
     
-    <a href="/drinks/">All Drinks</a> 
+    <h2><%=drink.name %></h2>
+    <img src="<%=drink.image%>.jpg">
+    <h2>Price: $<%=drink.price %></h2>
 
+    <a href="/drinks/">All Drinks</a> 
+ 
 
 </body>
 
