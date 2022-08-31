@@ -9,7 +9,7 @@ const drinks = require("./models/drinks");
 const app = express();
 const port = 3000;
 
-// DEFINE OUR ROUTES
+// DEFINE OUR ROUTESno
 // const fruits = [
 //     {
 //       name: "Mango",
@@ -29,8 +29,11 @@ const port = 3000;
 // ];
 
 app.get("/drinks/", (req, res) => {
- res.send(drinks);
-});
+    res.render("drinks_index.ejs", {
+        allDrinks: drinks,
+      })
+    });
+
 
 
 app.get("/drinks/:indexOfFruitsArray", (req, res) => {
